@@ -10,6 +10,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
 
 /**
  *
@@ -24,6 +26,7 @@ public class JavaFXApplication3 extends Application {
         Scene scene = new Scene(root);
         
         stage.setScene(scene);
+        stage.setTitle("Contact Manager");
         stage.show();
     }
 
@@ -31,6 +34,16 @@ public class JavaFXApplication3 extends Application {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        try
+        {
+            // Set System L&F before displaying main frame
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        }
+        catch (UnsupportedLookAndFeelException e) { }
+        catch (ClassNotFoundException e) { }
+        catch (InstantiationException e) { }
+        catch (IllegalAccessException e) { }
+        //new MainFrame().setVisible(true);
         launch(args);
     }
     
