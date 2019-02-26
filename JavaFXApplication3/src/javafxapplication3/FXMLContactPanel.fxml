@@ -26,12 +26,12 @@
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                <children>
-                  <Label layoutX="14.0" layoutY="14.0" text="Contact" />
-                  <Label layoutX="101.0" layoutY="14.0" text="gender" />
-                  <Label layoutX="160.0" layoutY="14.0" text="firstName" />
-                  <Label layoutX="237.0" layoutY="14.0" text="lastName" />
-                  <Label layoutX="14.0" layoutY="47.0" text="Contact Type" />
-                  <ComboBox layoutX="117.0" layoutY="42.0" prefWidth="150.0" promptText="Private" />
+                  <Label layoutX="14.0" layoutY="14.0" text="Contact" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+                  <Label layoutX="117.0" layoutY="14.0" text="gender" AnchorPane.leftAnchor="117.0" AnchorPane.topAnchor="14.0" />
+                  <Label layoutX="176.0" layoutY="14.0" text="firstName" AnchorPane.leftAnchor="176.0" AnchorPane.topAnchor="14.0" />
+                  <Label layoutX="253.0" layoutY="14.0" text="lastName" AnchorPane.leftAnchor="253.0" AnchorPane.topAnchor="14.0" />
+                  <Label layoutX="14.0" layoutY="47.0" text="Contact Type" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="47.0" />
+                  <ComboBox layoutX="117.0" layoutY="42.0" prefWidth="150.0" promptText="Private" AnchorPane.leftAnchor="117.0" AnchorPane.topAnchor="42.0" />
                </children>
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
@@ -69,10 +69,10 @@
                                           <TableColumn prefWidth="75.0" text="Type" />
                                       </columns>
                                     </TableView>
-                                    <Button layoutX="268.0" layoutY="14.0" mnemonicParsing="false" text="Add" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="14.0" />
+                                    <Button layoutX="268.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="73.0" text="Add" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="14.0" />
                                     <Button layoutX="259.0" layoutY="53.0" mnemonicParsing="false" text="Remove" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="53.0" />
-                                    <Button layoutX="264.0" layoutY="96.0" mnemonicParsing="false" text="Up" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="96.0" />
-                                    <Button layoutX="259.0" layoutY="140.0" mnemonicParsing="false" text="Down" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="140.0" />
+                                    <Button layoutX="264.0" layoutY="96.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="71.0" text="Up" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="96.0" />
+                                    <Button layoutX="259.0" layoutY="140.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="71.0" text="Down" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="140.0" />
                                  </children></AnchorPane>
                            </content>
                         </Tab>
@@ -80,7 +80,7 @@
                           <content>
                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                  <children>
-                                    <GridPane layoutX="137.0" layoutY="87.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <GridPane layoutX="17.0" layoutY="87.0" prefHeight="217.0" prefWidth="581.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="0.0">
                                       <columnConstraints>
                                         <ColumnConstraints hgrow="SOMETIMES" maxWidth="293.0" minWidth="10.0" prefWidth="97.0" />
                                         <ColumnConstraints hgrow="SOMETIMES" maxWidth="501.0" minWidth="10.0" prefWidth="501.0" />
