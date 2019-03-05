@@ -17,7 +17,7 @@
       <TextField layoutX="36.0" layoutY="38.0" prefHeight="26.0" prefWidth="31.0" AnchorPane.leftAnchor="36.0" AnchorPane.topAnchor="43.0" />
       <TextField layoutX="83.0" layoutY="38.0" AnchorPane.leftAnchor="83.0" AnchorPane.topAnchor="43.0" />
       <ChoiceBox layoutX="265.0" layoutY="38.0" prefWidth="150.0" AnchorPane.leftAnchor="265.0" AnchorPane.topAnchor="43.0" />
-      <Button layoutX="302.0" layoutY="244.0" mnemonicParsing="false" style="-fx-min-width: 100px;" text="Ok" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
-      <Button layoutX="365.0" layoutY="354.0" mnemonicParsing="false" style="-fx-min-width: 100px;" text="Cancel" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="135.0" />
+      <Button fx:id="ok" layoutX="302.0" layoutY="244.0" mnemonicParsing="false" style="-fx-min-width: 100px;" text="Ok" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <Button fx:id="cancel" layoutX="365.0" layoutY="354.0" mnemonicParsing="false" style="-fx-min-width: 100px;" text="Cancel" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="135.0" />
    </children>
 </AnchorPane>

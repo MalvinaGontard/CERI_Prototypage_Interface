@@ -6,9 +6,12 @@
 package javafxapplication3;
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
@@ -21,7 +24,7 @@ public class JavaFXApplication3 extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLMainFrame.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("FXMLMainFrame2.fxml"));
         
         Scene scene = new Scene(root);
         

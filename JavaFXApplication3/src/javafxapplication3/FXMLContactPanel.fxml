@@ -69,7 +69,7 @@
                                           <TableColumn prefWidth="75.0" text="Type" />
                                        </columns>
                                     </TableView>
-                                    <Button layoutX="268.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="73.0" text="Add" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="14.0" />
+                                    <Button fx:id="addPhoneNumber" layoutX="268.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="73.0" text="Add" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="14.0" />
                                     <Button layoutX="259.0" layoutY="53.0" mnemonicParsing="false" text="Remove" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="53.0" />
                                     <Button layoutX="264.0" layoutY="96.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="71.0" text="Up" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="96.0" />
                                     <Button layoutX="259.0" layoutY="140.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="71.0" text="Down" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="140.0" />
@@ -106,8 +106,8 @@
                         </Tab>
                      </tabs>
                   </TabPane>
-                  <Button layoutX="292.0" layoutY="234.0" mnemonicParsing="false" style="-fx-min-width: 100px;" text="Ok" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" />
-                  <Button layoutX="372.0" layoutY="268.0" mnemonicParsing="false" style="-fx-min-width: 100px;" text="Cancel" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="125.0" />
+                  <Button fx:id="ok" layoutX="292.0" layoutY="234.0" mnemonicParsing="false" style="-fx-min-width: 100px;" text="Ok" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                  <Button fx:id="cancel" layoutX="372.0" layoutY="268.0" mnemonicParsing="false" style="-fx-min-width: 100px;" text="Cancel" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="125.0" />
                </children>
             </AnchorPane>
          </children>

@@ -21,7 +21,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="595.0" prefWidth="742.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="javafxapplication3.FXMLMainFrame2Controller">
+<AnchorPane id="AnchorPane" prefHeight="595.0" prefWidth="742.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication3.FXMLMainFrame2Controller">
     <stylesheets>
         <URL value="@fxmlmainframe2.css" />
     </stylesheets>
@@ -46,7 +46,7 @@
       </MenuBar>
       <ToolBar prefHeight="54.0" prefWidth="650.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="29.0">
          <items>
-            <Button mnemonicParsing="false" text="Ajouter" />
+            <Button fx:id="addContact" mnemonicParsing="false" text="Ajouter" />
             <Button mnemonicParsing="false" text="Modifier" />
             <Button mnemonicParsing="false" text="Supprimer" />
          </items>
