@@ -20,6 +20,9 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Text?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.collections.FXCollections?>
+<?import javafxapplication3.*?> 
 
 <AnchorPane id="AnchorPane" prefHeight="595.0" prefWidth="742.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication3.FXMLMainFrame2Controller">
     <stylesheets>
@@ -89,10 +92,31 @@
                                  <children>
                                     <TableView layoutX="73.0" layoutY="-3.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                        <columns>
-                                          <TableColumn prefWidth="75.0" text="Nom" />
-                                          <TableColumn prefWidth="75.0" text="Prénom" />
-                                          <TableColumn maxWidth="1.7976931348623157E308" prefWidth="200.0" text="Email" />
+                                          <TableColumn prefWidth="75.0" text="Nom">
+                                              <cellValueFactory>
+                                                  <PropertyValueFactory property="nom" />
+                                              </cellValueFactory>
+                                          </TableColumn>
+                                          <TableColumn prefWidth="75.0" text="Prenom">
+                                              <cellValueFactory>
+                                                  <PropertyValueFactory property="prenom" />
+                                              </cellValueFactory>
+                                          </TableColumn>
+                                          <TableColumn maxWidth="1.7976931348623157E308" prefWidth="200.0" text="Email">
+                                              <cellValueFactory>
+                                                  <PropertyValueFactory property="email" />
+                                              </cellValueFactory>
+                                          </TableColumn>
                                        </columns>
+                                       <items>
+                                           <FXCollections fx:factory="observableArrayList">
+                                                <Contact nom="Smith" prenom="Jacob" email="jacob.smith@example.com"/>
+                                                <Contact nom="Johnson" prenom="Isabella" email="isabella.johnson@example.com"/>
+                                                <Contact nom="Williams" prenom="Ethan" email="ethan.williams@example.com"/>
+                                                <Contact nom="Jones" prenom="Emma" email="emma.jones@example.com"/>
+                                                <Contact nom="Brown" prenom="Michael" email="michael.brown@example.com"/>
+                                            </FXCollections>
+                                       </items>
                                     </TableView>
                                  </children>
                               </AnchorPane>
