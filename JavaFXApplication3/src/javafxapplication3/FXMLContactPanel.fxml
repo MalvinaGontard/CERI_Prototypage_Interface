@@ -6,7 +6,6 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.Slider?>
-<?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TableColumn?>
@@ -16,15 +15,16 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication3.FXMLContactPanelController">
     <stylesheets>
         <URL value="@fxmlcontactpanel.css" />
     </stylesheets>
    <children>
-      <SplitPane dividerPositions="0.24371859296482412" layoutX="77.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-        <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+      <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                <children>
                   <Label layoutX="14.0" layoutY="14.0" text="Contact" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
                   <Label layoutX="117.0" layoutY="14.0" text="gender" AnchorPane.leftAnchor="117.0" AnchorPane.topAnchor="14.0" />
@@ -34,11 +34,11 @@
                   <ComboBox layoutX="117.0" layoutY="42.0" prefWidth="150.0" promptText="Private" AnchorPane.leftAnchor="117.0" AnchorPane.topAnchor="42.0" />
                </children>
             </AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+            <AnchorPane depthTest="DISABLE" minHeight="0.0" minWidth="0.0" prefHeight="301.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
                <children>
                   <TabPane layoutX="35.0" layoutY="22.0" prefHeight="250.0" prefWidth="598.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="47.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                    <tabs>
-                      <Tab text="Identity">
+                     <tabs>
+                        <Tab text="Identity">
                            <content>
                               <AnchorPane prefHeight="203.0" prefWidth="598.0">
                                  <children>
@@ -58,38 +58,39 @@
                               </AnchorPane>
                            </content>
                         </Tab>
-                      <Tab text="Phones">
+                        <Tab text="Phones">
                            <content>
                               <AnchorPane prefHeight="200.0" prefWidth="200.0">
                                  <children>
                                     <TableView layoutX="22.0" prefHeight="217.0" prefWidth="491.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="107.0" AnchorPane.topAnchor="0.0">
-                                      <columns>
-                                        <TableColumn prefWidth="75.0" text="Prefix" />
-                                        <TableColumn prefWidth="75.0" text="Number" />
+                                       <columns>
+                                          <TableColumn prefWidth="75.0" text="Prefix" />
+                                          <TableColumn prefWidth="75.0" text="Number" />
                                           <TableColumn prefWidth="75.0" text="Type" />
-                                      </columns>
+                                       </columns>
                                     </TableView>
                                     <Button layoutX="268.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="73.0" text="Add" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="14.0" />
                                     <Button layoutX="259.0" layoutY="53.0" mnemonicParsing="false" text="Remove" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="53.0" />
                                     <Button layoutX="264.0" layoutY="96.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="71.0" text="Up" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="96.0" />
                                     <Button layoutX="259.0" layoutY="140.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="71.0" text="Down" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="140.0" />
-                                 </children></AnchorPane>
+                                 </children>
+                              </AnchorPane>
                            </content>
                         </Tab>
                         <Tab text="Address">
-                          <content>
-                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                  <children>
                                     <GridPane layoutX="17.0" layoutY="87.0" prefHeight="217.0" prefWidth="581.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="0.0">
-                                      <columnConstraints>
-                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="293.0" minWidth="10.0" prefWidth="97.0" />
-                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="501.0" minWidth="10.0" prefWidth="501.0" />
-                                      </columnConstraints>
-                                      <rowConstraints>
-                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                      </rowConstraints>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="293.0" minWidth="10.0" prefWidth="97.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="501.0" minWidth="10.0" prefWidth="501.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
                                        <children>
                                           <Label text="Street" />
                                           <Label text="City" GridPane.rowIndex="1" />
@@ -101,15 +102,15 @@
                                     </GridPane>
                                  </children>
                               </AnchorPane>
-                          </content>
+                           </content>
                         </Tab>
-                    </tabs>
+                     </tabs>
                   </TabPane>
                   <Button layoutX="292.0" layoutY="234.0" mnemonicParsing="false" style="-fx-min-width: 100px;" text="Ok" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" />
                   <Button layoutX="372.0" layoutY="268.0" mnemonicParsing="false" style="-fx-min-width: 100px;" text="Cancel" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="125.0" />
                </children>
             </AnchorPane>
-        </items>
-      </SplitPane>
+         </children>
+      </VBox>
    </children>
 </AnchorPane>
