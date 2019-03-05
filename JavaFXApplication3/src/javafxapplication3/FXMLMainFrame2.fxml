@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.net.URL?>
+<?import javafx.collections.FXCollections?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
@@ -8,21 +9,18 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.ScrollBar?>
-<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
-<?import javafx.scene.control.cell.PropertyValueFactory?>
-<?import javafx.collections.FXCollections?>
-<?import javafxapplication3.*?> 
 
 <AnchorPane id="AnchorPane" prefHeight="595.0" prefWidth="742.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication3.FXMLMainFrame2Controller">
     <stylesheets>
@@ -70,18 +68,20 @@
                <items>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Address Books" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0" />
-                        <ListView disable="true" layoutY="26.0" prefHeight="523.0" prefWidth="201.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="26.0" />
-                        <ScrollBar disable="true" layoutY="26.0" orientation="VERTICAL" prefHeight="455.0" prefWidth="17.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="26.0" />
-                        <ScrollPane layoutX="14.0" layoutY="26.0" prefHeight="372.0" prefWidth="294.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="26.0">
-                           <content>
-                              <AnchorPane>
+                        <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
                                  <children>
-                                    <ListView prefHeight="523.0" prefWidth="201.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Address Books" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0" />
                                  </children>
                               </AnchorPane>
-                           </content>
-                        </ScrollPane>
+                              <AnchorPane prefHeight="632.0" prefWidth="193.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <ListView prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
                      </children>
                   </AnchorPane>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
@@ -110,11 +110,11 @@
                                        </columns>
                                        <items>
                                            <FXCollections fx:factory="observableArrayList">
-                                                <Contact nom="Smith" prenom="Jacob" email="jacob.smith@example.com"/>
-                                                <Contact nom="Johnson" prenom="Isabella" email="isabella.johnson@example.com"/>
-                                                <Contact nom="Williams" prenom="Ethan" email="ethan.williams@example.com"/>
-                                                <Contact nom="Jones" prenom="Emma" email="emma.jones@example.com"/>
-                                                <Contact nom="Brown" prenom="Michael" email="michael.brown@example.com"/>
+                                                <Contact email="jacob.smith@example.com" nom="Smith" prenom="Jacob" />
+                                                <Contact email="isabella.johnson@example.com" nom="Johnson" prenom="Isabella" />
+                                                <Contact email="ethan.williams@example.com" nom="Williams" prenom="Ethan" />
+                                                <Contact email="emma.jones@example.com" nom="Jones" prenom="Emma" />
+                                                <Contact email="michael.brown@example.com" nom="Brown" prenom="Michael" />
                                             </FXCollections>
                                        </items>
                                     </TableView>
@@ -151,9 +151,9 @@
                                                       <Insets left="5.0" />
                                                    </GridPane.margin>
                                                 </Label>
-                                                <Label text="Label" GridPane.columnIndex="1" />
-                                                <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                                                <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                <Label GridPane.columnIndex="1" />
+                                                <Label GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                <Label GridPane.columnIndex="1" GridPane.rowIndex="2" />
                                              </children>
                                           </GridPane>
                                           <Label prefHeight="16.0" prefWidth="168.0" style="-fx-background-color: lightgrey;" text="Identity" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="7.0">
@@ -177,13 +177,13 @@
                                                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                              </rowConstraints>
                                              <children>
-                                                <Label text="Label">
+                                                <Label>
                                                    <padding>
                                                       <Insets left="5.0" />
                                                    </padding>
                                                 </Label>
-                                                <Label text="Label" GridPane.columnIndex="1" />
-                                                <Label text="Label" GridPane.rowIndex="1">
+                                                <Label GridPane.columnIndex="1" />
+                                                <Label GridPane.rowIndex="1">
                                                    <GridPane.margin>
                                                       <Insets left="5.0" />
                                                    </GridPane.margin>
@@ -216,8 +216,8 @@
                                                       <Insets left="5.0" />
                                                    </GridPane.margin>
                                                 </Label>
-                                                <Label text="Label" GridPane.columnIndex="1" />
-                                                <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                <Label GridPane.columnIndex="1" />
+                                                <Label GridPane.columnIndex="1" GridPane.rowIndex="1" />
                                              </children>
                                              <opaqueInsets>
                                                 <Insets />
