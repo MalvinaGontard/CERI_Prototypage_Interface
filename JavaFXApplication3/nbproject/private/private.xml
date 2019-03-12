@@ -3,13 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/gontard/NetBeansProjects/CERI_Prototypage_Interface/JavaFXApplication3/src/javafxapplication3/FXMLMainPanel.fxml</file>
-            <file>file:/home/gontard/NetBeansProjects/CERI_Prototypage_Interface/JavaFXApplication3/src/javafxapplication3/FXMLMainFrame.fxml</file>
-            <file>file:/home/gontard/NetBeansProjects/CERI_Prototypage_Interface/JavaFXApplication3/src/javafxapplication3/FXMLContactPanel.fxml</file>
-            <file>file:/home/gontard/NetBeansProjects/CERI_Prototypage_Interface/JavaFXApplication3/src/javafxapplication3/FXMLPhoneNumberPanel.fxml</file>
-            <file>file:/home/gontard/NetBeansProjects/CERI_Prototypage_Interface/JavaFXApplication3/src/javafxapplication3/FXMLPhoneNumberPanelController.java</file>
-            <file>file:/home/gontard/NetBeansProjects/CERI_Prototypage_Interface/JavaFXApplication3/src/javafxapplication3/FXMLMainFrameController.java</file>
-            <file>file:/home/gontard/NetBeansProjects/CERI_Prototypage_Interface/JavaFXApplication3/src/javafxapplication3/JavaFXApplication3.java</file>
+            <file>file:/home/casanova/Documents/Master-ilsen/s2/interface/TP/1/CERI_Prototypage_Interface/JavaFXApplication3/src/javafxapplication3/fxmlphonenumberpanel.css</file>
+            <file>file:/home/casanova/Documents/Master-ilsen/s2/interface/TP/1/CERI_Prototypage_Interface/JavaFXApplication3/src/javafxapplication3/FXMLMainFrame2.fxml</file>
+            <file>file:/home/casanova/Documents/Master-ilsen/s2/interface/TP/1/CERI_Prototypage_Interface/JavaFXApplication3/src/javafxapplication3/FXMLPhoneNumberPanel.fxml</file>
+            <file>file:/home/casanova/Documents/Master-ilsen/s2/interface/TP/1/CERI_Prototypage_Interface/JavaFXApplication3/src/javafxapplication3/FXMLMainFrame2Controller.java</file>
+            <file>file:/home/casanova/Documents/Master-ilsen/s2/interface/TP/1/CERI_Prototypage_Interface/JavaFXApplication3/src/javafxapplication3/fxmlcontactpanel.css</file>
+            <file>file:/home/casanova/Documents/Master-ilsen/s2/interface/TP/1/CERI_Prototypage_Interface/JavaFXApplication3/src/javafxapplication3/FXMLContactPanel.fxml</file>
+            <file>file:/home/casanova/Documents/Master-ilsen/s2/interface/TP/1/CERI_Prototypage_Interface/JavaFXApplication3/src/javafxapplication3/FXMLContactPanelController.java</file>
+            <file>file:/home/casanova/Documents/Master-ilsen/s2/interface/TP/1/CERI_Prototypage_Interface/JavaFXApplication3/src/javafxapplication3/FXMLPhoneNumberPanelController.java</file>
         </group>
     </open-files>
 </project-private>
