@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="225.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="javafxapplication3.FXMLcontactInfosController">
+    <stylesheets>
+        <URL value="@fxmlcontactinfos.css" />
+    </stylesheets>
+   <children>
+      <VBox prefHeight="389.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="0.0" prefWidth="600.0">
+               <children>
+                  <Label prefHeight="16.0" prefWidth="168.0" styleClass="border-bottom" text="Contact:" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="193.0" prefWidth="600.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <VBox prefHeight="362.0" prefWidth="199.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <AnchorPane prefHeight="6.0" prefWidth="198.0">
+                                       <children>
+                                          <Label prefHeight="16.0" prefWidth="168.0" style="-fx-background-color: lightgrey;" text="Identitée" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0">
+                                             <padding>
+                                                <Insets left="5.0" />
+                                             </padding>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="0.0" prefWidth="198.0">
+                                       <children>
+                                          <VBox prefHeight="48.0" prefWidth="168.0" style="-fx-border-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <AnchorPane prefHeight="13.0" prefWidth="168.0">
+                                                   <children>
+                                                      <HBox prefHeight="9.0" prefWidth="168.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+                                                         <children>
+                                                            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <Label text="Nom:" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                               </children>
+                                                            </AnchorPane>
+                                                            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <Label text="Label" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane prefHeight="0.0" prefWidth="168.0">
+                                                   <children>
+                                                      <HBox prefHeight="16.0" prefWidth="168.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+                                                         <children>
+                                                            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <Label text="Age:" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                               </children>
+                                                            </AnchorPane>
+                                                            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <Label text="Label" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane prefHeight="0.0" prefWidth="168.0">
+                                                   <children>
+                                                      <HBox prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+                                                         <children>
+                                                            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <Label text="Email:" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                               </children>
+                                                            </AnchorPane>
+                                                            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <Label text="Label" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="1.0" prefWidth="198.0">
+                                       <children>
+                                          <Label prefHeight="16.0" prefWidth="168.0" style="-fx-background-color: lightgrey;" text="Numérot de téléphone" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="15.0">
+                                             <padding>
+                                                <Insets left="5.0" />
+                                             </padding>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <VBox prefHeight="80.0" prefWidth="178.0" style="-fx-border-color: black;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <AnchorPane prefHeight="13.0" prefWidth="168.0">
+                                                   <children>
+                                                      <HBox prefHeight="9.0" prefWidth="168.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+                                                         <children>
+                                                            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <Label text="Mobile:" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                               </children>
+                                                            </AnchorPane>
+                                                            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <Label text="Label" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane prefHeight="0.0" prefWidth="168.0">
+                                                   <children>
+                                                      <HBox prefHeight="16.0" prefWidth="168.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+                                                         <children>
+                                                            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <Label text="Bureau" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                               </children>
+                                                            </AnchorPane>
+                                                            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <Label text="Label" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="101.0" prefWidth="403.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <VBox HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <AnchorPane prefHeight="0.0">
+                                             <children>
+                                                <Label prefHeight="16.0" style="-fx-background-color: lightgrey;" text="Numérot de téléphone" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0">
+                                                   <padding>
+                                                      <Insets left="5.0" />
+                                                   </padding>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="0.0">
+                                             <children>
+                                                <VBox prefHeight="48.0" prefWidth="168.0" style="-fx-border-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <AnchorPane prefHeight="13.0" prefWidth="168.0">
+                                                         <children>
+                                                            <HBox prefHeight="9.0" prefWidth="168.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+                                                               <children>
+                                                                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                                                     <children>
+                                                                        <Label text="Adresse" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                               </children>
+                                                            </HBox>
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <AnchorPane prefHeight="0.0" prefWidth="168.0">
+                                                         <children>
+                                                            <HBox prefHeight="16.0" prefWidth="168.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+                                                               <children>
+                                                                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                                                     <children>
+                                                                        <Label text="Ville" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                               </children>
+                                                            </HBox>
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <AnchorPane prefHeight="0.0" prefWidth="168.0">
+                                                         <children>
+                                                            <HBox prefHeight="100.0" prefWidth="718.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+                                                               <children>
+                                                                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                                                     <children>
+                                                                        <Pane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                           <children>
+                                                                              <HBox />
+                                                                           </children>
+                                                                        </Pane>
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                                                     <children>
+                                                                        <Button mnemonicParsing="false" text="Carte" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0" />
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                               </children>
+                                                            </HBox>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

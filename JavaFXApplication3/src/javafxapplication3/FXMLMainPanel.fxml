@@ -12,6 +12,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
@@ -64,8 +65,8 @@
                            </children></AnchorPane>
                       <AnchorPane id="left-down-pane" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                            <children>
-                              <Text layoutX="39.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0" />
-                              <AnchorPane layoutX="48.0" layoutY="-79.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black transparent transparent;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="22.0">
+                              <Text disable="true" layoutX="39.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0" />
+                              <AnchorPane disable="true" layoutX="48.0" layoutY="-79.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black transparent transparent;" visible="false" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="22.0">
                                  <children>
                                     <GridPane prefWidth="168.0" style="-fx-border-color: black; -fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="27.0">
                                       <columnConstraints>
@@ -166,6 +167,19 @@
                                        </opaqueInsets>
                                     </GridPane>
                                  </children></AnchorPane>
+                              <HBox prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="51.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <AnchorPane prefHeight="237.0" prefWidth="576.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <fx:include source="FXMLcontactInfos.fxml" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
                            </children></AnchorPane>
                     </items>
                   </SplitPane>

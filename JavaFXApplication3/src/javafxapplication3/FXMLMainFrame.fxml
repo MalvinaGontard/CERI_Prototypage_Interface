@@ -18,7 +18,11 @@
                   <fx:include source="FXMLToolBar.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="698.0" prefWidth="805.0" />
+            <AnchorPane prefHeight="698.0" prefWidth="805.0">
+               <children>
+                  <fx:include source="FXMLMainPanel.fxml" />
+               </children>
+            </AnchorPane>
             <AnchorPane prefHeight="0.0" prefWidth="805.0">
                <children>
                   <TextField text="Vous avez choisi le contact: " AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
