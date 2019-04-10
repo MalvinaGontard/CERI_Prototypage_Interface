@@ -117,11 +117,11 @@
                                        </columns>
                                        <items>
                                            <FXCollections fx:factory="observableArrayList">
-                                                <Contact email="jacob.smith@example.com" nom="Smith" prenom="Jacob" />
+                                                <!--<Contact email="jacob.smith@example.com" nom="Smith" prenom="Jacob" />
                                                 <Contact email="isabella.johnson@example.com" nom="Johnson" prenom="Isabella" />
                                                 <Contact email="ethan.williams@example.com" nom="Williams" prenom="Ethan" />
                                                 <Contact email="emma.jones@example.com" nom="Jones" prenom="Emma" />
-                                                <Contact email="michael.brown@example.com" nom="Brown" prenom="Michael" />
+                                                <Contact email="michael.brown@example.com" nom="Brown" prenom="Michael" />-->
                                             </FXCollections>
                                        </items>
                                     </TableView>
